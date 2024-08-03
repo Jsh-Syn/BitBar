@@ -3,8 +3,8 @@ html {
 }
 
 .start {
-    background-color: #f69321;
-    height: 100vh;
+    background-color: #403b34;
+    height: 650px;
     font-family: Poppins, open sans;
 }
 
@@ -19,9 +19,114 @@ html {
 }
 
 .nav-item:hover {
-    color: #c96615;
+    color: #ae4005;
 }
 
 #carouselExampleControls {
-    width: 560px;
+    width: 780px;
+}
+
+.another {
+    background-color: #794b17;
+    min-height: 100vh;
+    font-family: Poppins, open sans;
+}
+
+h1 {
+    font-size: 57px;
+    font-weight: 700;
+    color: rgb(255, 250, 244);
+}
+
+.navbar {
+    padding-bottom: 85px;
+}
+
+.col-7 {
+    padding-left: 1px;
+}
+
+.btn {
+    color: rgb(255, 250, 244);
+    background-color: #f9742d;
+    border: none;
+    width: 190px;
+    height: 50px;
+    border-radius: 14px;
+    transition: background-color 10ms ease-in-out;
+}
+
+.btn:hover {
+    color: rgb(255, 250, 244);
+    background-color: #f96b20;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+h2 {
+    font-family: Open sans;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 700;
+    color: #2b2722;
+
+}
+
+.partTwo {
+    padding-top: 50px;
+    height: 550px;
+}
+
+.place {
+    background: #f7f4f1;
+    height: 390px;
+    width: 280px;
+    max-width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 3px 30px;
+    transition: 10ms ease-in-out;
+}
+
+.place:nth-of-type(1n) {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.place:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.h2p2 {
+    margin-left: 25px;
+}
+
+#image2 {
+    height: 170px;
+    align-self: center;
+}
+
+#infoTitle {
+    font-weight: 700;
+    color: #2b2722;
+    text-transform: uppercase;
+}
+
+.partThree {
+    height: 550px;
+    /* background-color: #f9742d; */
+    background-color: #f1f6fc;
+    padding-top: 50px;
 }
