@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+.start {
+    background-color: #f69321;
+    height: 100vh;
+    font-family: Poppins, open sans;
+}
+
+.logo {
+    font-family: Poppins, open sans;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-item {
+    color: white;
+}
+
+.nav-item:hover {
+    color: #c96615;
+}
+
+#carouselExampleControls {
+    width: 560px;
+}
