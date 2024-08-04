@@ -4,14 +4,14 @@ html {
 
 .start {
     background-color: #403b34;
-    height: 650px;
+    height: 692px;
     font-family: Poppins, open sans;
 }
 
 .logo {
     font-family: Poppins, open sans;
     font-weight: 600;
-    color: white;
+    color: rgb(255, 236, 185);
 }
 
 .nav-item {
@@ -19,20 +19,14 @@ html {
 }
 
 .nav-item:hover {
-    color: #ae4005;
+    color: #f96b20;
 }
 
-#carouselExampleControls {
+#carouselControls {
     width: 780px;
 }
 
-.another {
-    background-color: #794b17;
-    min-height: 100vh;
-    font-family: Poppins, open sans;
-}
-
-h1 {
+.h1p1 {
     font-size: 57px;
     font-weight: 700;
     color: rgb(255, 250, 244);
@@ -62,7 +56,6 @@ h1 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-
 li {
     margin: 0;
     padding: 0;
@@ -80,7 +73,7 @@ h2 {
 
 .partTwo {
     padding-top: 50px;
-    height: 550px;
+    height: 570px;
 }
 
 .place {
@@ -125,8 +118,98 @@ h2 {
 }
 
 .partThree {
-    height: 550px;
-    /* background-color: #f9742d; */
-    background-color: #f1f6fc;
+    height: 930px;
+    background-color: #deeaf4;
     padding-top: 50px;
+}
+
+.h2p3 {
+    color: #403b34;
+    text-transform: uppercase;
+    margin-left: 14px;
+}
+
+.place2 {
+    background: #f1f3f7;
+    height: 390px;
+    width: 280px;
+    max-width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 3px 30px;
+    transition: 10ms ease-in-out;
+}
+
+.place2:nth-of-type(1n) {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.place2:hover {
+    border: 1px solid #2e2e40;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.partFour {
+    margin-top: 50px;
+    height: 570px;
+}
+
+.h2p4 {
+    color: #403b34;
+    text-transform: uppercase;
+}
+
+.cardClass {
+    margin: 0 200px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.card {
+    transition: 2ms ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.partFive {
+    background-color: rgb(31, 26, 21);
+    margin-top: 30px;
+    height: 210px;
+}
+
+.h2p5 {
+    color: #fffdfb;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+#pFoot {
+    color: #ffffff;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    color: #fffdfb;
+    display: block;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-transform: none;
+    text-decoration: none;
+    color: #f96b20;
 }
