@@ -77,7 +77,7 @@ h2 {
 }
 
 .place {
-    background: #f7f4f1;
+    background: #fff6ef;
     height: 390px;
     width: 280px;
     max-width: 100%;
@@ -118,7 +118,7 @@ h2 {
 }
 
 .partThree {
-    height: 930px;
+    height: 950px;
     background-color: #deeaf4;
     padding-top: 50px;
 }
@@ -157,7 +157,7 @@ h2 {
 
 .partFour {
     margin-top: 50px;
-    height: 570px;
+    height: 610px;
 }
 
 .h2p4 {
@@ -187,8 +187,9 @@ h2 {
 }
 
 .h2p5 {
+    font-family: open sans;
     color: #fffdfb;
-    padding: 20px 0;
+    padding-top: 20px;
     text-transform: capitalize;
 }
 
@@ -212,4 +213,15 @@ a:hover {
     text-transform: none;
     text-decoration: none;
     color: #f96b20;
+}
+
+#desc {
+    color: white;
+}
+
+.logoF {
+    font-family: Poppins, open sans;
+    font-weight: 600;
+    color: rgb(255, 236, 185);
+    padding-top: 20px;
 }
