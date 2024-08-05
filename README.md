@@ -1,4 +1,4 @@
-# BitBar: IT Solutions
+![image](https://github.com/user-attachments/assets/2fb68709-4498-4468-b830-a1f9d4698017)# BitBar: IT Solutions
 ## Stuffs used to make these website:
 - HTML
 - CSS
@@ -14,4 +14,4 @@
 ![image](https://github.com/user-attachments/assets/3193d3c5-6eaf-4cce-8de8-0c0f9766779d)
 ![image](https://github.com/user-attachments/assets/65f7f52f-f7b7-4d59-8801-42d3b947e201)
 ![image](https://github.com/user-attachments/assets/f673253e-1757-41fb-b38c-da8c10946814)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/896dff62-4615-4359-b2ea-1f2c8e0c207e)
