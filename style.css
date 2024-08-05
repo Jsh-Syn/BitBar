@@ -1,11 +1,14 @@
 html {
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
 .start {
     background-color: #403b34;
-    height: 692px;
+    height: 680px;
     font-family: Poppins, open sans;
+    padding-top: 135px;
+    width: 100vw;
 }
 
 .logo {
@@ -14,11 +17,12 @@ html {
     color: rgb(255, 236, 185);
 }
 
-.nav-item {
+.nav-link {
     color: white;
+    transition: 50ms ease-in-out;
 }
 
-.nav-item:hover {
+.nav-link:hover {
     color: #f96b20;
 }
 
@@ -33,7 +37,7 @@ html {
 }
 
 .navbar {
-    padding-bottom: 85px;
+    background-color: #403b34;
 }
 
 .col-7 {
@@ -52,7 +56,7 @@ html {
 
 .btn:hover {
     color: rgb(255, 250, 244);
-    background-color: #f96b20;
+    background-color: #f95e20;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
@@ -78,7 +82,7 @@ h2 {
 
 .place {
     background: #fff6ef;
-    height: 390px;
+    height: 380px;
     width: 280px;
     max-width: 100%;
     border-radius: 20px;
@@ -89,12 +93,14 @@ h2 {
     text-align: center;
     padding: 3px 30px;
     transition: 10ms ease-in-out;
+    padding-top: 20px;
 }
 
 .place:nth-of-type(1n) {
     margin-top: 15px;
     margin-bottom: 20px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .place:hover {
@@ -131,7 +137,7 @@ h2 {
 
 .place2 {
     background: #f1f3f7;
-    height: 390px;
+    height: 380px;
     width: 280px;
     max-width: 100%;
     border-radius: 12px;
@@ -142,12 +148,14 @@ h2 {
     text-align: center;
     padding: 3px 30px;
     transition: 10ms ease-in-out;
+    padding-top: 20px;
 }
 
 .place2:nth-of-type(1n) {
     margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .place2:hover {
@@ -163,16 +171,18 @@ h2 {
 .h2p4 {
     color: #403b34;
     text-transform: uppercase;
+    margin-left: 0px;
 }
 
 .cardClass {
-    margin: 0 200px;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 .card {
+    margin-left: auto;
+    margin-right: auto;
     transition: 2ms ease-in-out;
+    width: 315px;
 }
 
 .card:hover {
@@ -181,15 +191,15 @@ h2 {
 }
 
 .partFive {
-    background-color: rgb(31, 26, 21);
+    background-color: #1f1d19;
     margin-top: 30px;
-    height: 210px;
+    height: 270px;
 }
 
 .h2p5 {
     font-family: open sans;
     color: #fffdfb;
-    padding-top: 20px;
+    padding-top: 30px;
     text-transform: capitalize;
 }
 
@@ -207,6 +217,7 @@ li {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 a:hover {
@@ -217,11 +228,239 @@ a:hover {
 
 #desc {
     color: white;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .logoF {
     font-family: Poppins, open sans;
     font-weight: 600;
     color: rgb(255, 236, 185);
-    padding-top: 20px;
+    padding-top: 30px;
+}
+
+@media(max-width:1267px) {
+    .card {
+        width: 280px;
+    }
+}
+
+@media(max-width:1140px) {
+    .partFive {
+        padding-top: 20px;
+        height: 460px;
+    }
+
+    .card {
+        width: 250px;
+    }
+}
+
+@media(max-width:991.2px) {
+    .start {
+        height: 470px;
+    }
+
+    .card {
+        width: 210px;
+    }
+
+    .partFour {
+        height: 690px;
+    }
+}
+
+@media(max-width:955px) {
+    .partFour {
+        height: 690px;
+    }
+
+    .card {
+        width: 215px;
+    }
+
+    .partFive {
+        padding-top: 10px;
+        height: 360px;
+    }
+}
+
+@media(max-width:888px) {
+    .partFive {
+        padding-top: 20px;
+        height: 440px;
+    }
+
+    .partFour {
+        height: 760px;
+    }
+
+    .card {
+        width: 180px;
+    }
+}
+
+@media(max-width:780px) {
+    .partFour {
+        height: 620px;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .partFive {
+        padding-top: 20px;
+        height: 575px;
+    }
+
+    .h2p5 {
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .p5ul {
+        padding-left: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .partFour {
+        height: 1900px;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .partFive {
+        padding-top: 20px;
+        height: 575px;
+    }
+
+    .h2p5 {
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .p5ul {
+        padding-left: 15px;
+    }
+}
+
+@media(max-width:710px) {
+    .start {
+        height: 545px;
+        padding-top: 105px;
+    }
+
+    .partTwo {
+        height: 1200px;
+        background-color: #fff6ef;
+    }
+
+    .p2class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place {
+        background: #fdf6f0;
+        height: 340px;
+        width: 355px;
+        padding-top: 10px;
+    }
+
+    .place:nth-of-type(1n) {
+        margin-bottom: 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .place:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .partThree {
+        height: 2100px;
+        padding-top: 40px;
+    }
+
+    .section3Div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place2 {
+        background: #f7f9ff;
+        height: 310px;
+        width: 320px;
+        border-radius: 14px;
+        padding: 30px 15px;
+        padding-top: 10px;
+    }
+
+    .place2:nth-of-type(1n) {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        margin-left: 17px;
+    }
+
+    .place2:hover {
+        border: 1px solid #242436;
+    }
+
+    .partFour {
+        height: 1890px;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .partFive {
+        margin-top: 85px;
+        height: 595px;
+    }
+
+    .h2p5 {
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .p5ul {
+        padding-left: 15px;
+    }
+}
+
+@media(max-width:530px) {
+    .partThree {
+        height: 2060px;
+        padding-top: 40px;
+    }
+
+    .place2 {
+        background: #f7f9ff;
+        height: 310px;
+        width: 310px;
+        border-radius: 14px;
+        justify-content: center;
+        padding: 30px 15px;
+        padding-top: 10px;
+    }
+
+    .place2:nth-of-type(1n) {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+
+    .place2:hover {
+        border: 1px solid #242436;
+    }
+
 }
