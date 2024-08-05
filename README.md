@@ -1,5 +1,5 @@
 # BitBar: IT Solutions
-## Stuffs used to make these website:
+## Stuffs used to make this website:
 - HTML
 - CSS
 - Bootstrap 5
