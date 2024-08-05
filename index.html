@@ -4,317 +4,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Website</title>
+    <title>BitBar: IT Solutions</title>
 </head>
 
 <body>
-    <div class="container-fluid start">
-        <div class="navbar navbar-expand-lg">
-            <a class="navbar-brand mb-0"><span class="logo">Logo</span></a>
-            <button class="navbar-toggler" data-target="#mainNav" data-toggle="collapse"><span
-                    class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0"><span class="logo">BitBar</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="mainNav">
-                <div class="navbar-nav ml-auto">
-                    <a href="#home" class="nav-item nav-link">Home</a>
-                    <a href="" class="nav-item nav-link">About</a>
-                    <a href="" class="nav-item nav-link">Products</a>
-                    <a href="" class="nav-item nav-link">Services</a>
-                    <a href="" class="nav-item nav-link">Blogs</a>
-                    <a href="" class="nav-item nav-link">Contact</a>
-                    <a href="" class="nav-item nav-link">Get a quote</a>
-                </div>
+                <ul class="navbar-nav ms-auto me-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blogs" class="nav-link">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="row border">
-            <div class="col-6 border d-flex justify-content-center">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    </nav>
+    <div class="container-fluid start">
+        <div class="row">
+            <div class="col-lg-7 d-flex justify-content-center d-none d-lg-flex">
+                <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="guitar1.png" alt="First slide">
+                            <img src="emr.png" class="d-block w-100 rounded" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="guitar2.png" alt="Second slide">
+                            <img src="moon.png" class="d-block w-100 rounded" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="guitar3.png" alt="Third slide">
+                            <img src="phantom.png" class="d-block w-100 rounded" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center px-3">
+                <h1 class="py-3 pl-2 h1p1">Empowering Your Business with IT Excellence</h1>
+                <button type="button" class="btn">Get a quote</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid partTwo">
+        <h2 class="text-center h2p2">Who we are</h2>
+        <div class="row">
+            <div class="col d-flex justify-content-center p2class">
+                <div class="place">
+                    <img src="Browser stats-cuate.png" id="image2" alt="">
+                    <p><span id="infoTitle">Why choose BitBar?</span></p>
+                    <p class="text-muted">We deliver efficient, tailored IT solutions that make technology seamless and
+                        enjoyable.
+                    </p>
+                </div>
+                <div class="place">
+                    <img src="Collab-amico.png" id="image2" alt="">
+                    <p><span id="infoTitle">People in motion</span></p>
+                    <p class="text-muted">Our dynamic team is always on the move, driving progress and pushing the
+                        boundaries of
+                        technology.</p>
+                </div>
+                <div class="place">
+                    <img src="Team work-bro.png" id="image2" alt="">
+                    <p><span id="infoTitle">What makes us unique?</span></p>
+                    <p class="text-muted">We combine technical expertise with a client-first approach, ensuring sweet
+                        results every time.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perspiciatis
-        officia commodi at consectetur nesciunt repellat accusantium magni! Corrupti, officia nemo. Deserunt saepe
-        voluptas fugiat repellendus labore quia veniam cum.
-        Earum quisquam maxime maiores, officia impedit illum velit eaque tempore error unde mollitia beatae sed quos
-        reiciendis, dolores magni laborum doloremque.
-        Reprehenderit quis totam dicta consequatur ut laborum expedita voluptate ipsa quibusdam molestias architecto
-        quidem, porro, deleniti, modi doloribus a fuga corporis voluptates soluta illum libero. Eos, neque!
-        Reprehenderit, neque. Eaque.
-        Beatae nihil fugit voluptatem quisquam, possimus dolore repellat aspernatur iste earum, dolores amet nisi
-        voluptatibus corrupti excepturi fugiat at officiis neque inventore exercitationem eius labore! Provident
-        molestiae eos magni corporis.
-        Omnis fugit labore nobis vitae quibusdam cumque cum magnam corrupti. Explicabo necessitatibus blanditiis ratione
-        maxime, aliquid maiores vitae quaerat voluptatem molestiae nesciunt eius impedit debitis. Iusto beatae quae
-        tenetur quidem?
-        Tempore dolor voluptatum repellat sapiente reiciendis sit vero laboriosam ab, corrupti tempora libero eius,
-        odit, numquam ipsum! Dolor, nam cupiditate, necessitatibus quis molestiae quibusdam optio maiores voluptate
-        repudiandae voluptatibus ipsa.
-        Quod veritatis fugiat pariatur saepe, unde nam omnis, esse sunt et excepturi, voluptatibus delectus laborum
-        eaque. Ratione possimus quia mollitia. Praesentium, odio? Nobis, libero officia minima voluptates nihil saepe
-        magnam.
-        Corrupti quod aspernatur magnam, dolore quidem asperiores nulla quasi quis ducimus? Perferendis atque, fugiat
-        earum dignissimos, molestias non perspiciatis neque nobis cum dolore, eligendi voluptatibus animi impedit
-        numquam itaque dolor.
-        Provident, voluptates delectus! Nostrum repellat, eius ut quaerat iste odio blanditiis veniam deleniti nobis
-        accusamus assumenda delectus earum quam minus? Ea facilis aperiam odit, quam incidunt quas sed commodi vero.
-        Architecto ad facilis dicta veniam repellendus sequi praesentium eum explicabo quidem repellat earum accusantium
-        dolore ullam, quam nam autem corporis delectus facere sed ducimus provident vitae eaque? Sint, vitae dicta.
-        Voluptate deleniti exercitationem, numquam corrupti excepturi ullam, assumenda vitae perspiciatis ipsa hic
-        delectus. Laborum deserunt, omnis voluptatem natus exercitationem itaque, explicabo iusto aut assumenda eos
-        quidem laboriosam non asperiores cum!
-        Eos nemo facilis quam facere obcaecati, quasi ipsa voluptates repellat earum, sequi, suscipit animi non? Ducimus
-        dignissimos nesciunt provident et magni voluptatum repellendus at minima, ab quasi. Nesciunt, quidem placeat!
-        Quae provident illo possimus temporibus consequatur praesentium quam dolor consectetur culpa amet nostrum,
-        impedit enim delectus dignissimos asperiores ratione doloribus? Autem, quia laborum dolore quasi consectetur non
-        eius corrupti facilis.
-        Qui odio, at quisquam quas optio distinctio doloribus adipisci ea eaque, repellat reiciendis, omnis unde magni
-        perferendis molestias neque sunt soluta libero? Distinctio id architecto placeat soluta quia corporis eum.
-        Culpa molestiae voluptatibus perspiciatis. Dolore, sit consequuntur ipsam dolor accusamus repellendus obcaecati
-        similique nobis dicta aliquam, possimus quasi laudantium rerum ducimus vel quis numquam, iusto odio assumenda!
-        Vero, necessitatibus nostrum.
-        Neque minima cupiditate cumque ipsam delectus, asperiores voluptatibus adipisci, recusandae repudiandae nesciunt
-        doloremque voluptates aut pariatur et ea magnam omnis praesentium dolorum? Cupiditate repellendus atque nam
-        expedita commodi alias nihil.
-        Beatae quam harum soluta commodi reiciendis molestias aperiam ipsa, atque nostrum, consequatur eius cupiditate
-        vitae quisquam, voluptate dolores pariatur distinctio officia eveniet inventore sequi debitis cumque? Sequi
-        voluptatibus delectus optio.
-        Sed voluptatum voluptatem itaque, assumenda excepturi veritatis incidunt voluptates eum in soluta vero quos sunt
-        quia tempore nobis deleniti officiis ipsum, rem cumque labore ad. Doloremque iure quod porro saepe.
-        Voluptatem quaerat voluptate doloremque illum fugit, a optio nemo quasi, excepturi fuga facere rem debitis unde
-        earum autem molestiae, rerum aliquam cumque blanditiis! Esse quo odio consequatur accusantium officiis eum.
-        Explicabo dicta ex impedit voluptatum quisquam, doloribus iure magni! Illo culpa, beatae optio voluptates iste
-        earum excepturi harum ex rem sed, ipsum atque nesciunt dicta voluptatum voluptatem inventore tempore
-        perspiciatis?
-        Adipisci, tempore a distinctio enim eos nostrum blanditiis eligendi doloremque magni dolor ratione error ea quas
-        molestias vitae quis molestiae est explicabo sit sequi reiciendis voluptas asperiores. Nobis, tempora quis?
-        Eligendi assumenda ipsa sunt reprehenderit aliquid! Rem vel veritatis earum obcaecati error dolore excepturi,
-        iusto non, doloremque recusandae perspiciatis dicta sit, nesciunt laboriosam commodi amet cupiditate rerum. Sed,
-        quisquam soluta.
-        Magnam ratione praesentium corrupti quos doloremque fugit minima odit esse quam ut sequi non, obcaecati dolorum
-        illo accusamus quas illum, architecto sapiente autem, fuga molestias voluptate nulla aut unde! Dolore?
-        Molestiae beatae tempore sint recusandae dolor exercitationem? Corporis quae possimus natus, distinctio
-        cupiditate nulla pariatur. Eveniet qui repellat quaerat nobis animi amet voluptatibus nemo, est dolores neque.
-        Laborum, explicabo omnis?
-        Ipsam culpa voluptatum veniam tempora ut tenetur eius commodi corporis cum numquam magnam qui placeat ducimus
-        repellat incidunt asperiores sed obcaecati velit, quidem rerum odio vero! Nulla asperiores architecto dolore!
-        Asperiores omnis eveniet deserunt ab repellendus eum corrupti consequuntur aperiam molestiae ex reprehenderit
-        alias cum unde neque iusto id obcaecati explicabo, reiciendis, dolore odit sit dolor quae? Consequatur, magnam
-        atque.
-        Atque minima ea temporibus dolorum deserunt quisquam quasi officiis tenetur distinctio numquam illo, libero
-        quibusdam iure quam accusamus fugit nobis error voluptatibus commodi debitis! Sequi commodi dolorem odit omnis
-        nam?
-        Molestias a deserunt reiciendis natus est ex cumque! Harum quidem dolores non nam sunt odio similique quia
-        laborum aliquid pariatur adipisci eum nemo, repellendus cum culpa, consequuntur dicta. Suscipit, corrupti!
-        Inventore pariatur, tempore ducimus esse alias consectetur sapiente quam corporis soluta non voluptates minima
-        nisi, rem nulla ullam sed voluptatibus! Ducimus at suscipit id quisquam. Fugiat sit dolorem eum ab?
-        Ea, consequatur? Vero sequi tempore consequatur dolorum quibusdam rerum, neque atque quis quasi magni a,
-        veritatis molestiae voluptate ipsa odit esse! Iusto porro consectetur magni velit! Iusto facilis asperiores
-        culpa.
-        Nesciunt cum qui distinctio consectetur! Ut recusandae eveniet itaque, omnis exercitationem amet. Libero at cum
-        quae neque soluta eveniet pariatur quos, quaerat vel sed quibusdam hic quas quidem deserunt ipsum.
-        Laborum nostrum dolore consequatur veniam incidunt excepturi reprehenderit tempora dolorum beatae accusamus
-        autem officia, sequi ipsa quod dolor sit rerum labore inventore modi sed vitae esse tempore porro. Voluptatem,
-        laborum.
-        Autem, at! Illum ipsum repudiandae consequatur nostrum eius itaque tempore? Provident sunt fuga libero cumque.
-        Vero quia deleniti vitae facere ipsum eum animi velit, atque labore dolore dolorem fuga suscipit.
-        Quibusdam, accusamus distinctio! Itaque tenetur quisquam ipsa dolorum totam delectus quis doloribus eum nesciunt
-        aspernatur est modi rem veritatis quia, sequi error sit recusandae ea enim odit! Eveniet, facilis labore.
-        Itaque magni expedita quaerat autem tenetur aliquid aperiam tempore suscipit fugit ipsam voluptatibus possimus
-        inventore voluptates ut et illo, velit excepturi repudiandae consectetur sequi ratione id maxime perferendis!
-        Nostrum, voluptatem.
-        Quibusdam dolores beatae magni, officiis libero sed molestiae quos! Provident dolores quisquam quod nemo?
-        Excepturi accusantium architecto quo, voluptas odio, sunt dolore, reprehenderit placeat voluptatibus quaerat
-        quod commodi perferendis amet?
-        Aspernatur modi consectetur dolore magni fugit vitae dolores doloribus, a beatae ea dicta, provident voluptas
-        accusantium inventore mollitia quia porro explicabo ex fuga omnis, cum itaque labore! Delectus, sunt molestiae.
-        Magni, maxime, molestias et dicta non assumenda mollitia corrupti perferendis officiis optio natus porro
-        voluptatibus nemo, eum modi amet hic. Quidem sunt voluptatum provident eos, a deleniti mollitia culpa
-        necessitatibus?
-        Blanditiis veniam nobis, qui quibusdam vitae dolore molestias odit, non molestiae temporibus vel, iure alias
-        placeat! Fugit minima quia nostrum amet nulla earum at eveniet dolor odio culpa? Eum, ducimus.
-        Tenetur expedita praesentium tempora ipsa amet error odit iste dolorum doloribus voluptas consequuntur,
-        laudantium quae cupiditate quibusdam minus mollitia. Autem temporibus cumque suscipit maiores commodi id aut
-        officiis in eos.
-        Doloribus culpa dolorum voluptates nobis laudantium ipsam reprehenderit harum placeat, fugiat quia debitis
-        eaque, earum nesciunt! Atque odio repudiandae debitis earum voluptatibus perferendis accusamus eveniet unde,
-        quasi, natus eum accusantium!
-        Doloribus quis nobis dolor tenetur neque, natus quaerat velit, officiis optio pariatur in eveniet esse odit
-        voluptatem autem cupiditate, alias cumque dolore porro beatae accusantium veniam at magnam aut! Quos?
-        Quo cum omnis minus voluptatum sint, ipsum dolorem? Dolore rem quaerat odio quia corporis illum odit qui at
-        architecto magnam esse sequi harum recusandae ut non, doloribus, suscipit, tenetur nulla!
-        Itaque impedit expedita architecto, sequi ratione similique consectetur aliquid esse et laborum dicta reiciendis
-        est enim nulla dolorum sed cumque modi iusto vel, ipsum suscipit sit, deserunt alias. Voluptas, impedit?
-        Sapiente illum quidem eligendi a pariatur deleniti sint, eum quasi, hic nesciunt, molestiae facilis quis sequi!
-        Architecto quo natus culpa! Dolor voluptatibus ratione consectetur ex, error corporis eum expedita ducimus?
-        Ipsa neque provident delectus possimus alias fugiat culpa accusamus nulla id eius voluptas magni corporis velit
-        modi similique, fugit minima quaerat quidem odio pariatur quae ipsum earum, aliquam illo! Quas!
-        Praesentium consequuntur porro accusantium repellat? Nostrum, unde! Earum ipsa nisi rem, iure odit id blanditiis
-        beatae perspiciatis iste aliquam dolorem doloremque, cumque suscipit deserunt ad distinctio nulla velit tenetur.
-        Nemo.
-        Magni iste atque adipisci eius in sint distinctio ex non iusto nulla libero, obcaecati aperiam blanditiis eaque
-        hic commodi nemo placeat eveniet vitae consequatur consectetur reprehenderit? Atque dolor voluptatibus rem.
-        Cumque enim soluta quaerat sapiente fugiat inventore. Ea ipsam non quia sunt laudantium, quaerat earum ex
-        consequatur saepe itaque, consectetur perspiciatis qui ipsum repellat quo maxime. Omnis sint maxime cupiditate.
-        Molestias eos eligendi totam in voluptate, dicta illo necessitatibus ad modi assumenda minus adipisci? Omnis
-        suscipit doloremque nihil quod ipsam aspernatur ad quae quisquam beatae. Tempore nesciunt nemo officia?
-        Consequatur?
-        Adipisci nesciunt voluptate deserunt at doloribus, ipsum inventore illum ullam harum accusantium quisquam
-        veritatis culpa eum non quasi tempora, necessitatibus consectetur iure quas sed veniam. Atque culpa nihil
-        placeat molestiae.
-        Voluptate illum voluptas eveniet, tempore obcaecati natus voluptatem asperiores, officiis assumenda expedita id
-        quas consequatur molestiae maiores, maxime veniam qui vitae. Debitis voluptates consequatur aut laudantium
-        doloribus quam architecto praesentium.
-        Corporis doloribus, optio assumenda ullam sit non harum hic consequatur facilis asperiores at. Consequuntur ex,
-        quas pariatur fugiat excepturi sunt delectus, eum sequi optio quos minus ducimus deleniti quasi error.
-        Sed explicabo dolores, minus officia harum vero placeat provident ad possimus nulla sit aut qui similique,
-        assumenda optio praesentium. Libero, obcaecati. Expedita qui nostrum est necessitatibus quam adipisci dolor
-        asperiores.
-        Iusto perferendis non quo in voluptas quae consequatur, hic delectus dicta, eius, totam quidem adipisci nihil
-        eum. At voluptas, quisquam ullam asperiores consequatur nam ex esse et. Numquam, necessitatibus quae!
-        Delectus accusamus placeat vero? Vero mollitia quidem, vitae pariatur ullam corporis quis consectetur quisquam
-        provident itaque harum nam, dolor labore adipisci atque officiis quam nesciunt cupiditate. Incidunt ea ullam
-        consequuntur!
-        Porro consequatur cupiditate deserunt. Itaque, perspiciatis minus neque rerum hic voluptatum deserunt molestias
-        sequi natus dolorum, aperiam ex nulla ipsa molestiae cupiditate unde. Reprehenderit aut deleniti aspernatur
-        accusantium placeat facere?
-        Incidunt minima itaque neque quis perferendis? Vel laudantium nemo enim, error ipsa corporis laboriosam
-        doloremque nesciunt temporibus voluptas, similique amet. Ex mollitia provident esse, possimus aspernatur
-        veritatis deserunt impedit velit?
-        Praesentium inventore porro quam distinctio, totam amet corporis laudantium optio obcaecati odio hic neque
-        consequuntur aut, culpa est explicabo velit voluptates incidunt deserunt fuga non fugiat blanditiis commodi
-        minima! Impedit.
-        Maiores repellendus, et ut quia, nam, tempora sint animi molestias perferendis excepturi aliquam vitae! Fugit
-        placeat explicabo, ea hic dolore, quidem, amet dolorem aspernatur error quia dicta reprehenderit animi
-        inventore.
-        Accusamus nulla totam autem, molestiae recusandae dolorum eligendi beatae? Repellendus qui aspernatur quia
-        suscipit itaque quam minus quidem libero assumenda exercitationem harum nulla illum rem temporibus, eligendi
-        voluptatum tempora accusantium?
-        Autem, minus ad nisi officia fugiat suscipit sequi cumque quisquam veniam tenetur at repellat vero quas tempore?
-        Eaque placeat vero, autem tempore fugiat expedita unde cum consequuntur soluta dicta aspernatur.
-        Est accusamus reprehenderit tempore exercitationem temporibus ducimus expedita sapiente, perferendis commodi
-        porro amet sequi suscipit, assumenda obcaecati totam eaque debitis fugiat repellendus tenetur neque. Voluptatem
-        blanditiis facilis cumque sed debitis.
-        Nobis dolor doloribus voluptatibus, sapiente, mollitia voluptates nisi at incidunt, nesciunt sequi quae facere
-        eius? Veritatis, quis aspernatur. Voluptates reiciendis, mollitia deserunt odit et iste ab nesciunt blanditiis
-        iure doloribus.
-        Deleniti quo vitae vel et possimus, corrupti adipisci a accusamus! Quo dicta eaque delectus officiis. Beatae
-        modi consequuntur alias, veniam in facere aliquam. Accusantium labore quos nemo rerum quo alias!
-        Quod laborum velit minus ab ex sapiente incidunt maxime necessitatibus reiciendis expedita a sint minima, iste,
-        rerum quidem sit natus veniam ratione eligendi, vel quis. Quod officia velit magnam consequuntur.
-        Sed, minima nisi! At, ab! Alias soluta quo, debitis voluptate, doloribus nam quia cumque reprehenderit tempora
-        beatae eaque laborum numquam maiores molestias libero, expedita accusamus blanditiis? In commodi tempora alias.
-        Expedita pariatur odit itaque, quasi exercitationem voluptatibus quisquam delectus minima eveniet, molestias
-        debitis velit tenetur magni. Porro unde perspiciatis a. Necessitatibus alias aut expedita quasi amet eos
-        sapiente possimus facere.
-        Iusto id in quis odio velit laboriosam recusandae quos cumque vero, reiciendis quisquam, nulla impedit placeat!
-        Maxime consectetur qui inventore? Quibusdam pariatur amet omnis repellendus voluptate ipsa? Architecto,
-        cupiditate nulla.
-        A et unde dolorem! Officia magnam ullam recusandae. Ducimus eveniet nostrum quaerat officia odio sit maxime,
-        quam quod debitis, accusamus fugit voluptates asperiores facere itaque esse placeat iure eos a.
-        Corporis numquam, quas rerum soluta enim est atque repellat quo adipisci, voluptatibus natus et laborum minus
-        obcaecati dolorem ratione ipsa? Quos ab perspiciatis consequatur animi optio itaque dignissimos aperiam
-        repellendus.
-        Suscipit ipsam aliquam dicta perferendis ducimus saepe dolor enim, sint voluptatum ratione. Earum molestias iste
-        exercitationem voluptates ab, voluptatibus consequatur hic quasi distinctio dicta corrupti numquam perferendis
-        asperiores tempore! Fugit!
-        Accusamus dignissimos velit quidem totam expedita cumque distinctio aspernatur amet nobis molestias maiores
-        itaque architecto eaque aliquid odit repudiandae deserunt laborum, corrupti, consequatur quam. Labore, voluptas
-        perspiciatis. Magnam, fugit corporis.
-        Modi repellendus nobis vitae necessitatibus magnam, sit eius ducimus omnis sunt quam reiciendis ratione
-        quibusdam, est laboriosam eaque tempore excepturi quas, ipsam quia dolorum libero explicabo autem totam
-        obcaecati. Delectus?
-        Praesentium, vel consectetur animi voluptatem illum laborum. Nemo saepe provident enim cumque nesciunt,
-        assumenda quas aspernatur quidem. In maiores consectetur incidunt, adipisci non reiciendis id harum aut iure
-        quod omnis!
-        Praesentium harum hic quidem pariatur eos rerum! Quam, quis? Fuga quis nisi commodi eveniet alias perferendis
-        blanditiis, ut impedit nobis dicta! Amet reiciendis, aperiam atque soluta alias corrupti error eaque?
-        Quasi neque tempora, odio voluptatum exercitationem inventore possimus fugit magnam maxime amet eveniet dolores
-        blanditiis aliquam consequuntur excepturi facilis error iure ut atque quaerat eaque in quae commodi. Quibusdam,
-        dignissimos.
-        Accusantium expedita dicta sunt quidem eius repellat. Quo, eius est! Praesentium quos beatae aliquam accusantium
-        rem sint maiores vel quaerat voluptatem eligendi enim, adipisci incidunt voluptatum eaque iste, iusto facere.
-        Dolorem similique aperiam facere saepe non, quam veniam. Iure quis cumque impedit, velit laborum provident quos
-        recusandae repellat ullam commodi earum necessitatibus ipsum. Omnis pariatur facere voluptate ea ipsam
-        laudantium?
-        Laborum laudantium officia, maiores corrupti facilis quod, aliquam omnis fugiat laboriosam atque consequuntur
-        commodi soluta eligendi in similique placeat! Iusto recusandae id fugit provident voluptas aliquam. Aperiam,
-        quo. Sint, error?
-        Natus fuga modi eveniet voluptates delectus nulla molestiae vel architecto sint molestias excepturi nam, ipsam
-        accusantium vero, nostrum perferendis. Architecto molestias doloribus debitis blanditiis reiciendis dolorum ipsa
-        excepturi accusantium eius?
-        Eveniet error possimus, eaque in asperiores delectus doloribus quasi ad, eligendi inventore minima molestias
-        quibusdam blanditiis nemo iusto? Officia voluptates laborum adipisci. Provident unde placeat distinctio facilis
-        ut ipsam non.
-        Repellendus dignissimos asperiores ab nostrum recusandae rem earum officiis suscipit fugit ad dolorum facilis
-        esse, accusantium magni necessitatibus quod delectus iure, voluptatum odio in nobis ducimus rerum ipsum natus!
-        Officia?
-        Iusto minus illo necessitatibus dolor nostrum dolore laudantium quaerat culpa nulla enim commodi repudiandae ex
-        qui quia et, perferendis vitae ducimus voluptates similique? Omnis delectus incidunt eum ipsum voluptatem
-        inventore.
-        Reiciendis unde cumque perferendis voluptas obcaecati accusantium nemo! Minus provident, quo est vitae nisi
-        earum velit odit et tempore pariatur tenetur corrupti eligendi ad. Repellendus modi eaque dignissimos distinctio
-        dicta.
-        Reprehenderit exercitationem iusto aut adipisci vero dolorum voluptas beatae vitae sint, labore dolores optio,
-        provident, suscipit necessitatibus corporis doloremque veniam! Illo quae incidunt officia sequi consequatur.
-        Possimus commodi quasi atque!
-        Dolorem perspiciatis ipsam, totam possimus sapiente alias consectetur ducimus, explicabo consequuntur quo qui,
-        libero distinctio nostrum neque soluta corrupti temporibus voluptatum fugit eos officia quibusdam minus. Nulla
-        nobis eligendi in.
-        Reiciendis quam voluptates fugiat mollitia eos omnis aut tempore, cumque dolorem! Eius, tenetur. Soluta
-        reprehenderit quaerat accusamus dolor, neque culpa. Nam accusamus beatae asperiores sit, assumenda eaque
-        laboriosam provident voluptas!
-        Sunt accusantium excepturi nihil cum odio sed? Accusantium odit, fugit, molestias animi esse quidem optio non
-        repellendus vitae, natus dolores consequuntur magnam pariatur possimus unde reiciendis voluptatem quibusdam
-        veniam voluptate?
-        Blanditiis enim autem porro consequuntur illum ea eligendi fuga, natus officia explicabo voluptas expedita
-        deleniti dignissimos assumenda ratione sit qui corporis fugiat quaerat reiciendis eum! Perferendis nemo
-        consectetur dicta possimus.
-        Natus delectus quo, praesentium corrupti adipisci aut recusandae consequuntur odit ut consequatur illo dicta
-        mollitia molestias, earum omnis amet enim? Sit distinctio minima tempore deleniti ratione? A eius quos facilis?
-        Exercitationem sint perferendis dolorum, nesciunt illo labore. Voluptatem sapiente ut quia doloribus iure, omnis
-        fugit minima consectetur iusto ad saepe quisquam voluptatibus, aliquam animi expedita optio sint nihil, numquam
-        qui!
-        Ut veritatis officia laboriosam aperiam, nisi, a fuga quia facere id nam quas corrupti tenetur tempore cum eum.
-        Facere beatae nostrum quisquam unde provident. Vero enim culpa dolorum harum adipisci?
-        Aut in error quos repellat optio blanditiis sed earum animi nemo cum. Voluptatibus possimus harum laudantium,
-        beatae dolorem iste numquam obcaecati id incidunt aliquid fugiat autem quam? Corrupti, temporibus neque?</div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <div class="container-fluid partThree">
+        <h2 class="text-center h2p3">Services We Offered</h2>
+        <div class="row">
+            <div class="col d-flex justify-content-center section3Div">
+                <div class="place2"><img src="custom.png" id="image2">
+                    <p><span id="infoTitle">Custom Software Development</span></p>
+                    <p class="d-none d-sm-block">Tailored software to fit your unique business goals.</p>
+                </div>
+                <div class="place2"><img src="Open source-bro.png" id="image2">
+                    <p><span id="infoTitle">Web Application Development</span></p>
+                    <p class="d-none d-sm-block">Powerful web apps designed to enhance your digital presence.</p>
+                </div>
+                <div class=" place2"><img src="UI-UX design-amico.png" id="image2">
+                    <p><span id="infoTitle">UI/UX Design</span></p>
+                    <p class="d-none d-sm-block">Intuitive, user-friendly designs that elevate the user experience.</p>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center section3Div">
+                <div class="place2"><img src="Website Creator-rafiki.png" id="image2">
+                    <p><span id="infoTitle">Web Design</span></p>
+                    <p class="d-none d-sm-block">Modern, responsive websites that captivate and convert.</p>
+                </div>
+                <div class="place2"><img src="Gaming-bro.png" id="image2" alt="">
+                    <p><span id="infoTitle">Game Development</span></p>
+                    <p class="d-none d-sm-block">Engaging games crafted with creativity and precision.</p>
+                </div>
+                <div class="place2"><img src="Software engineer-rafiki.png" id="image2">
+                    <p><span id="infoTitle">Mobile App Development</span></p>
+                    <p class="d-none d-sm-block">High-performance mobile apps that keep your business connected.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid partFour">
+        <h2 class="h2p4 text-center">Products and Services</h2>
+        <div class="row row-cols-1 row-cols-md-4 cardClass">
+            <div class="col pt-3 col-md-3 cards">
+                <div class="card h-100">
+                    <img class="card-img-top" src="emr.png" alt="EMR Mobile Application">
+                    <div class="card-body">
+                        <h5 class="card-title">EMR Mobile Application</h5>
+                        <p class="card-text">A cross-platform app built with Flutter, designed for efficient patient
+                            record management. Key features include patient management, HPED insights, secure data
+                            handling, user authentication, and video conferencing.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 10 days ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-3 col-md-3 cards">
+                <div class="card h-100">
+                    <img class="card-img-top" src="plms.png" alt="Parking Lot Management System">
+                    <div class="card-body">
+                        <h5 class="card-title">Parking Lot Management System</h5>
+                        <p class="card-text">A system tailored for automating the monitoring of vehicles and
+                            revenue report generation, the parking lot can avoid a lot of problems including the
+                            human-errors, recordkeeping, and human resource allocation.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 10 days ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-3 col-md-3 cards">
+                <div class="card h-100">
+                    <img class="card-img-top" src="maxresdefault.webp" alt="Farscape Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Farscape Game</h5>
+                        <p class="card-text">Farscape is an exciting 2D platformer developed in Unity Hub, featuring
+                            eight diverse levels set in environments like the Forest, Dungeon, and Desert Ruins. Players
+                            must navigate challenging obstacles while collecting soul orbs to gain dash abilities.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-3 col-md-3 cards">
+                <div class="card h-100">
+                    <img class="card-img-top" src="moon.png" alt="Moon Book">
+                    <div class="card-body">
+                        <h5 class="card-title">Moon Book</h5>
+                        <p class="card-text">A booking mobile application for issuing a ride to the moon.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 5 hours ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col d-flex justify-content-center mt-3"> <button type="button" class="btn">View
+                    More</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fixed partFive">
+        <div class="row">
+            <div class="col-md-3 d-flex flex-column align-items-start">
+                <h3 class="logoF px-3">BitBar</h3>
+                <p id="desc">BitBar offers smooth, reliable IT solutions designed to delight and empower your business.
+                    Just like
+                    your favorite chocolate bar, we make technology easy and satisfying, delivering expert services that
+                    drive your success.</p>
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-start">
+                <h4 class="h2p5">Socials</h4>
+                <ul class="p5ul">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg> <a href="#home">BitBar Philippines</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg> <a href="#home">BitBarPH</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path
+                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        </svg> <a href="#home">BitBar</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg> <a href="github.com/Jsh-Syn" target="_blank">BitBarRepo</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-start">
+                <h4 class="h2p5">Location</h4>
+                <ul class="p5ul">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg> Main office: Locrian City, Major</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg> 2nd branch: Aeolian City, Major</li>
+                </ul>
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-start">
+                <h4 class="h2p5">Contacts</h4>
+                <ul class="p5ul">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg> 0912 321 1233</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                        </svg> <a href="#home">BitBarPhTG</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 </body>
 
