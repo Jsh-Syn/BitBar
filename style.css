@@ -108,10 +108,6 @@ h2 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.h2p2 {
-    margin-left: 25px;
-}
-
 #image2 {
     height: 170px;
     align-self: center;
@@ -132,7 +128,6 @@ h2 {
 .h2p3 {
     color: #403b34;
     text-transform: uppercase;
-    margin-left: 14px;
 }
 
 .place2 {
@@ -171,7 +166,7 @@ h2 {
 .h2p4 {
     color: #403b34;
     text-transform: uppercase;
-    margin-left: 0px;
+    /* margin-left: 0px; */
 }
 
 .cardClass {
@@ -316,7 +311,6 @@ a:hover {
 
     .h2p5 {
         padding-top: 25px;
-        padding-left: 15px;
     }
 
     .p5ul {
@@ -340,7 +334,6 @@ a:hover {
 
     .h2p5 {
         padding-top: 25px;
-        padding-left: 15px;
     }
 
     .p5ul {
@@ -428,7 +421,6 @@ a:hover {
 
     .h2p5 {
         padding-top: 25px;
-        padding-left: 15px;
     }
 
     .p5ul {
@@ -463,4 +455,8 @@ a:hover {
         border: 1px solid #242436;
     }
 
+    .cardClass {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
