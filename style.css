@@ -234,6 +234,7 @@ a:hover {
     padding-top: 30px;
 }
 
+
 @media(max-width:1267px) {
     .card {
         width: 280px;
@@ -315,6 +316,10 @@ a:hover {
 
     .p5ul {
         padding-left: 15px;
+    }
+
+    .h2p5 {
+        margin-left: 15px;
     }
 }
 
@@ -458,5 +463,34 @@ a:hover {
     .cardClass {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media(max-width:415px) {
+    .start {
+        height: 460px;
+        font-family: Poppins, open sans;
+    }
+
+    .card {
+        width: 315px;
+    }
+
+    .partFour {
+        height: 1810px;
+    }
+
+    .partFive {
+        height: 640px;
+    }
+
+    .h1p1 {
+        font-size: 47px;
+    }
+
+    .h2p2,
+    .h2p3,
+    .h2p4 {
+        font-size: 20px;
     }
 }
