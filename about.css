@@ -1,0 +1,92 @@
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff6ef;
+}
+
+.start {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #b6240d;
+}
+
+.navbar-brand:hover {
+    color: #b6240d;
+}
+
+h2 {
+    color: #2b2722;
+}
+
+#aboutImg {
+    height: 515px;
+    width: 515px;
+}
+
+p {
+    margin-left: 190px;
+    margin-right: 190px;
+    text-align: justify;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #1f1d19;
+    margin-top: 60px;
+    height: 75px;
+    padding-top: 10px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f96b20;
+}
+
+@media(max-width:900px) {
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #aboutImg {
+        height: 315px;
+        width: 315px;
+    }
+
+    footer {
+        margin-top: 20px;
+        height: 172px;
+        padding-top: 10px;
+    }
+}
+
+@media(max-width:420px) {
+    #aboutImg {
+        height: 215px;
+        width: 215px;
+    }
+
+    .nav-item {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        margin-top: 20px;
+        height: 145px;
+        padding-top: 10px;
+    }
+}
