@@ -144,7 +144,9 @@ a:hover {
 }
 
 @media(max-width:450px) {
-
+body{
+     background-color: #fff6ef;
+}
     html {
         margin: 0;
         padding: 0;
