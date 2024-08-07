@@ -19,6 +19,7 @@ body {
 
 h2 {
     color: #2b2722;
+    margin-top: 30px;
 }
 
 #aboutImg {
@@ -39,18 +40,34 @@ main {
 footer {
     background-color: #1f1d19;
     margin-top: 60px;
-    height: 75px;
-    padding-top: 10px;
+    height: 70px;
+    padding-top: 20px;
+    text-align: center;
 }
 
-.nav-item {
+footer ul li {
+    font-size: 14px;
+    display: inline;
+}
+
+li:nth-child(2n) {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
     color: white;
     text-decoration: none;
 }
 
-.nav-link:hover {
+a:hover {
     color: #f96b20;
 }
+
 
 @media(max-width:900px) {
     p {
@@ -65,9 +82,11 @@ footer {
 
     footer {
         margin-top: 20px;
-        height: 172px;
+        height: 52px;
         padding-top: 10px;
     }
+
+
 }
 
 @media(max-width:420px) {
@@ -86,7 +105,13 @@ footer {
 
     footer {
         margin-top: 20px;
-        height: 142px;
+        height: 58px;
         padding-top: 10px;
     }
+
+    li:nth-child(2n) {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
 }

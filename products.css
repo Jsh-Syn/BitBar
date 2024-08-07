@@ -1,0 +1,37 @@
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff6ef;
+    color: #403b34;
+}
+
+.start {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #b6240d;
+}
+
+.navbar-brand:hover {
+    color: #b6240d;
+}
+
+#aboutImg {
+    height: 315px;
+    width: 315px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+
+@media(max-width:415px) {
+    #aboutImg {
+        height: 220px;
+        width: 220px;
+    }
+
+}
