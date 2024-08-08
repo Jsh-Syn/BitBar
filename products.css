@@ -6,6 +6,11 @@ html {
 body {
     background: #fff6ef;
     color: #403b34;
+    font-family: Poppins, Open sans;
+}
+
+h5 {
+    font-size: 17px;
 }
 
 .start {
